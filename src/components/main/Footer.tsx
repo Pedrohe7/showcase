@@ -42,7 +42,7 @@ const Footer = () => {
                 <div className="min-w-[200px] h-auto flex flex-col items-center justify-start text-center">
                     <div className="font-bold text-[18px] mb-4 text-white uppercase tracking-wider">Manifesto</div>
                     <p className="text-[14px] text-gray-400 max-w-[200px] font-light italic">
-                        "A moda é a armadura para sobreviver à realidade do dia a dia." 
+                        &quot;A moda é a armadura para sobreviver à realidade do dia a dia.&quot; 
                     </p>
                 </div>
             </div>
