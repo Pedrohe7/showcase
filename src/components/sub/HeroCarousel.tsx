@@ -60,10 +60,17 @@ const HeroCarousel = () => {
                     transition={{ duration: 0.5 }}
                     className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center"
                 >
-                    {/* Image Placeholder */}
-                    <div className="w-40 h-40 mb-6 rounded-full bg-gradient-to-tr from-purple-500/20 to-cyan-500/20 border border-white/10 flex items-center justify-center shadow-[0_0_30px_rgba(168,85,247,0.15)] group-hover:scale-110 transition-transform duration-500">
-                         {/* Replace with actual image if available */}
-                         <span className="text-4xl">⚡</span>
+                    {/* Product Image */}
+                    <div className="w-40 h-40 mb-6 rounded-full bg-gradient-to-tr from-purple-500/20 to-cyan-500/20 border border-white/10 flex items-center justify-center shadow-[0_0_30px_rgba(168,85,247,0.15)] group-hover:scale-110 transition-transform duration-500 overflow-hidden relative">
+                         {featuredProducts[currentIndex].imageUrl ? (
+                             <img 
+                                src={featuredProducts[currentIndex].imageUrl} 
+                                alt={featuredProducts[currentIndex].title}
+                                className="w-full h-full object-cover"
+                             />
+                         ) : (
+                             <span className="text-4xl">⚡</span>
+                         )}
                     </div>
 
                     <h3 className="text-2xl font-bold text-white mb-2">{featuredProducts[currentIndex].title}</h3>
